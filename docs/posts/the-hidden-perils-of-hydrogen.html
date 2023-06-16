@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Random Walks - The Hidden Perils of Hydrogen</title>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <link rel="stylesheet" href="../css/default.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="../">Random Walks</a>
+            </div>
+            <nav>
+                <a href="../">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../archive.html">Archive</a>
+            </nav>
+        </header>
+
+        <main role="main">
+            <h1>The Hidden Perils of Hydrogen</h1>
+            <article>
+    <section class="header">
+        Posted on January 25, 2023
+        
+            by Yudhister Kumar
+        
+    </section>
+    <section>
+        <blockquote>
+<p>Note (as of Jan 27, 2023): I do not endorse some aspects of this post as is. Namely, the figures and lack of citations. Editing in progress.</p>
+</blockquote>
+<p>Hydrogen is the fuel of the future. It’s the most abundant element in the universe, is incredibly mass-efficient, and can be produced without much fuss. It can be used for both large and small scale energy production (think fusion and fuel cells respectively), and has virtually no emissions, carbon or otherwise. However, there’s just one problem.</p>
+<p>It’s absurdly volume-inefficient.</p>
+<p>One liter of hydrogen can produce 0.01 MJ of energy at STP (standard temperature and pressure, 273K and 1atm) compared to 34 MJ/L for gasoline. That’s 0.02% of the energy output for liter. Granted, things improve drastically for liquid hydrogen, where the comparison is 8 MJ/L vs 34, but this requires maintenance of temperatures below −252.8°C, only a few degrees above absolute zero.</p>
+<p>Gaseous hydrogen isn’t that easy to store either: it requires containers pressurizable up to 700 bar (700x atmospheric pressure). That’s 10,000 PSI. And even then, it takes 5L of hydrogen to match up to 1L of gasoline. The Department of Energy estimates that to meet most lightweight vehicular driving ranges, between 5-13 kg of hydrogen need to be carried onboard the vehicle. If we do some quick calculations, that means that vehicles need to carry between 85 - 294 L of liquid hydrogen (some multiple of this for gaseous hydrogen) to go anywhere. For all you Americans, this is roughly between 22-77 gallons.</p>
+<p>(For reference, 5-13kg of hydrogen converts to 20-70 liters of gasoline, in terms of energy efficiency. I also make no claim as to the specific accuracy of the numbers, these are napkin calculations, and this doesn’t take into account energy efficiencies created by recycling hydrogen or fuel cells being more efficient than combustion engines, etc.)</p>
+<p>It would not be feasible to have stereotypical sedans with fifty gallon gas tanks in a world of solely hydrogen fuel. Additionally, the extreme conditions liquid hydrogen must be stored as bottlenecks its production and transportation.</p>
+<p>The Department of Energy set standards for hydrogen storage to be met by 2020 in order for hydrogen fuel to become feasible for portable power and light-duty vehicular applications. These were:
+- 1.5 kWh/kg (overall system performance)
+- 1.0 kWh/L (overall system performance)
+- $10/kWh (translates to $333/kg for stored hydrogen)</p>
+<p>So far, none of these goals have been met, and I have doubts about the scalability of present research (although I’m open to criticism on this take). Let’s take a look at what’s being done to fix the issue.</p>
+<h2 id="short-term-solutions">Short-term Solutions</h2>
+<p>The majority of short-term solutions to hydrogen’s issues as a widespread fuel consist of creating inexpensive, high pressure storage solutions for H2 gas. From the Department of Energy’s website again, this means developing fiber-reinforced composites that can be produced cheaply and withstand 700 bar pressures. As these don’t necessarily address the underlying volume-inefficiency problem, we can move on to the long-term solutions.</p>
+<h2 id="long-term-solutions">Long-term Solutions</h2>
+<p>Long-term solutions take two forms:<strong>higher-density gaseous storage</strong> and <strong>materials-based hydrogen storage</strong>. The former develops vessels that can compress H2 gas more, while the latter seeks to manufacture materials that have better volumetric hydrogen ratios. This will mainly focus on the materials based approach.</p>
+<p>The main research avenues for materials-based hydrogen storage are metal hydrides, adsorbents, and chemical hydrogen storage materials. Let’s look at each.</p>
+<h3 id="metal-hydrides">Metal Hydrides</h3>
+<p>Metal hydrides are compounds in which metal atoms form ligands with hydrogen. The strength and nature of these bonds vary widely with the metal, but they allow compounds to act as hydrogen carriers without getting decomposed themselves, which is useful for materials cycling (and drastically improves efficiency).</p>
+<p>The issue is, the sorts of complex hydrides that have the most promising properties cannot be produced at scale cheaply in any amount, let alone the quantities required for hydrogen to become a serious competitor to gasoline. However, if these compounds were able to scale, then I would be very excited about our energy futures.</p>
+<h3 id="adsorbents">Adsorbents</h3>
+<p>Adsorption is the process by which molecules stick to the internal or external surface of something. Attaching hydrogen gas to some compound would allow it to retain its original molecular form and simultaneously compress it (by virtue of gases being quite volume inefficient). The issue with these is that they don’t compress from the original that much, and are expensive to make.</p>
+<h3 id="chemical-hydrogen-storage-materials">Chemical Hydrogen Storage Materials</h3>
+<p>These are perhaps the most straightfoward: find materials that you can either hydrolyze or pyrolyze to release hydrogen, and hope that they have less volume than liquid hydrogen and that they’re easier to store. Well, lo and behold, it turns out there’s an entire class of molecules like this: Amine-boranes.</p>
+<p>Amine-boranes are essentially ammonia molecules complexed to boron with extra hydrogen thrown in. The simplest amine-borane is ammonia borane, or borazane, with the chemical formula NH3BH3. It hydrolyzes and pyrolyzes well, has a higher molar density of hydrogen than hydrogen itself, and is a stable solid at room temperature. What more could you ask for?</p>
+<p>Well, it’s absurdly expensive to synthesize. I suspect the cost can be reduced at scale, but it does not seem feasible at the moment.</p>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+		All thoughts are my own.
+		Made with
+            <a href="http://jaspervdj.be/hakyll">Hakyll</a>.
+        </footer>
+    </body>
+</html>

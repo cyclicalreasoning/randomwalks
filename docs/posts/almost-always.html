@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Random Walks - five ways to say "Almost Always" and actually mean it</title>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <link rel="stylesheet" href="../css/default.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="../">Random Walks</a>
+            </div>
+            <nav>
+                <a href="../">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../archive.html">Archive</a>
+            </nav>
+        </header>
+
+        <main role="main">
+            <h1>five ways to say "Almost Always" and actually mean it</h1>
+            <article>
+    <section class="header">
+        Posted on April 19, 2023
+        
+            by Yudhister Kumar
+        
+    </section>
+    <section>
+        <h2 id="in-english">In English</h2>
+<p>A boring, colloquial way.</p>
+<blockquote>
+<p>“<em>Almost all the eggs are gone!” (as half a dozen remain)</em></p>
+</blockquote>
+<h2 id="not-finite-ness">Not-Finite-ness</h2>
+<p>A slightly-less-boring mathy way.</p>
+<blockquote>
+<p>“<em>Almost all prime numbers are odd!</em>”</p>
+</blockquote>
+<p>There are infinitely many primes. There is exactly one even prime number (2). Infinity minus one is… infinity.</p>
+<blockquote>
+<p>“<em>Almost all natural numbers are larger than one-hundred thousand quadrillion quadrillion vigintillion! (10^83)</em>”</p>
+</blockquote>
+<p>There are infinitely many natural numbers. There are infinitely many natural numbers larger than one-hundred thousand quadrillion quadrillion vigintillion. No practical difference between 10^83 and 1 (other than that one is an upper bound on the number of atoms in the universe).</p>
+<p>You formalize this with sets: if you have some (infinite) set, a subset whose complement has a finite cardinality encompasses almost everything in the set. We call this <em>cofiniteness.</em></p>
+<h2 id="probability-one">Probability ~One</h2>
+<p>A way to quantify surety.</p>
+<blockquote>
+<p>“<em>Almost all the people will lose money at the casino!</em>”</p>
+</blockquote>
+<p>I’m not sure what the exact rates are, but I’d bet money on this being true.</p>
+<blockquote>
+<p>“<em>Almost all numbers are composite!</em>”</p>
+</blockquote>
+<p>It is well known that the number of prime numbers below <span class="math inline"><em>N</em></span> is approximately <span class="math inline"><em>N</em>/ln <em>N</em></span>. In the limit as \(N\) goes to infinity, the ratio of primes to non-primes numbers goes to approximately zero. So if you choose a random positive integer, I would bet my life savings that it’s composite.</p>
+<blockquote>
+<p>“<em>Almost all graphs are <a href="https://en.wikipedia.org//wiki/Asymmetric_graph">asymmetric</a>.</em>”</p>
+</blockquote>
+<p>An intuitive explanation: if you take all possible combinations of nodes and vertices and let the number of each tend towards infinity, you should expect chaos to triumph over order. (sorry Ramsey). This does depend on a certain definition of symmetry, however, and a clearer statement would be “<em>almost all graphs have only one automorphism.</em>”</p>
+<h2 id="the-lebesgue-measure-is-not-zero">The Lebesgue Measure is Not-Zero</h2>
+<p>A straightforward-yet-strange way for real numbers.</p>
+<p>The <a href="https://en.wikipedia.org/wiki/Lebesgue_measure">Lebesgue measure</a> is what you get when you try to generalize length, area, and volume to \(n\)-dimensions. It forms the basis for our current understanding of integration, and helps us figure out how big stuff is.</p>
+<p>Something with zero volume basically doesn’t exist anyway.</p>
+<blockquote>
+<p>“<em>Almost all real numbers are irrational!</em>”</p>
+</blockquote>
+<p>Well yes, all the rationals have measure zero. All countable sets have measure zero, and the rationals are countable.</p>
+<p>(Measures are nice: they’re a neat generalization of physical scales (mass, volume, etc.) to arbitrary mathematical objects. They’re particularly useful for dealing with continuous things <del>we love Lebesgue measures</del>)</p>
+<blockquote>
+<p>“<em>Almost all real numbers are noncomputable!</em>”</p>
+</blockquote>
+<p>Well yes? Of course an arbitrary real number can’t be computed to arbitrary precision by a finite algorithm? <a href="https://en.wikipedia.org/wiki/Computable_number">Computable numbers</a> are <em>countable,</em> remember? Nevermind that <em>basically all the numbers we deal with are computable,</em> this is <em>obvious.</em></p>
+<p>(Measure zero stuff basically doesn’t exist, even if they’re the only things we use on a daily basis)</p>
+<blockquote>
+<p>“<em>Almost all real numbers aren’t in the Cantor set!</em>”</p>
+</blockquote>
+<p>Well yes, of course! Even though the <a href="https://en.wikipedia.org/wiki/Cantor_set">Cantor set</a> is uncountably infinite, it still has measure zero! It’s a weird pseudo-fractal embedding of the real line that somehow manages to lose everything in translation but still keep all the relevant information.</p>
+<p>(Idk, the Cantor set is weird)</p>
+<h2 id="it-is-contained-in-a-nonprincipal-ultrafilter">It is Contained in a Nonprincipal Ultrafilter</h2>
+<p>A <em>filter</em> <span class="math inline">ℱ</span> on an arbitrary set \(I\) is a collection of subsets of \(I\) that is closed under set intersections and supersets. (Note that this means that the smallest filter on \(I\) is \(I\) itself).</p>
+<p>An <em>ultrafilter</em> is a filter which, for every <span class="math inline"><em>A</em> ⊆ <em>I</em></span>, contains either \(A\) or its complement. A <em>principal</em> ultrafilter contains a finite set.</p>
+<p>A <em>nonprincipal ultrafilter</em> does not.</p>
+<p>This turns out to be an incredibly powerful mathematical tool, and can be used to generalize the concept of “almost all” to esoteric mathematical objects that might not have well-defined or intuitive properties.</p>
+<p>(One of the coolest uses of nonprincipal ultrafilters is in the construction of the hyperreals, post forthcoming).</p>
+<p>Let \(\) be a nonprincipal ultrafilter over the natural numbers. It obviously contains no finite sets, but we run into a slight issue when we take the set
+\[
+E = \{2,4,6,8, \ldots \}
+\]
+and its complement
+\[
+O = \{1,3,5,7, \ldots \}.
+\]
+By the filter axioms, only one of these can be in \(\), and one of them <em>has</em> to be in \(\). And thus, we can safely say:</p>
+<blockquote>
+<p>“<em>Almost all natural numbers are <strong>even</strong>.</em>”</p>
+</blockquote>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+		All thoughts are my own.
+		Made with
+            <a href="http://jaspervdj.be/hakyll">Hakyll</a>.
+        </footer>
+    </body>
+</html>

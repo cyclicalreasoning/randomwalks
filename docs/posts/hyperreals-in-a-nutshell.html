@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Random Walks - Hyperreals in a Nutshell</title>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <link rel="stylesheet" href="../css/default.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="../">Random Walks</a>
+            </div>
+            <nav>
+                <a href="../">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../archive.html">Archive</a>
+            </nav>
+        </header>
+
+        <main role="main">
+            <h1>Hyperreals in a Nutshell</h1>
+            <article>
+    <section class="header">
+        Posted on April 30, 2023
+        
+            by Yudhister Kumar
+        
+    </section>
+    <section>
+        <p><em>Epistemic status: Vaguely confused and probably lacking a sufficient technical background to get all the terms right. Is very cool though, so I figured I’d write this.</em></p>
+<blockquote>
+<p>And what are these Fluxions? The Velocities of evanescent Increments? And what are these same evanescent Increments? They are neither finite Quantities nor Quantities infinitely small, nor yet nothing. May we not call them the ghosts of departed quantities?</p>
+<p>- George Berkeley, <em>The Analyst</em></p>
+</blockquote>
+<p>When calculus was invented, it didn’t make sense. Newton and Leibniz played fast and dirty with mathematical rigor to develop methods that arrived at the correct answers, but no one knew why. It took another one and a half centuries for Cauchy and Weierstrass develop analysis, and in the meantime people like Berkeley refused to accept the methods utilizing these “ghosts of departed quantities.”</p>
+<p>Cauchy’s and Weierstrass’s solution to the crisis of calculus was to define infinitesimals in terms of limits. In other words, to not describe the behavior of functions directly acting on infinitesimals, but rather to frame the the entire endeavour as studying the behaviors of certain operations in the limit, in that weird superposition of being arbitrarily close to something yet not it.</p>
+<p>(And here I realize that math is better shown, not told)</p>
+<p>The limit of a function \(f(x)\) at \(x=a\) is \(L\) if for any \(\epsilon&gt;0\) there exists some \(\delta &gt; 0\) such that if
+\[ |x-a|&lt;\delta,\]
+then
+\[|f(x)-L|&lt;\epsilon.\]</p>
+<p>Essentially, the limit exists if there’s some value \(\delta\) that forces \(f(x)\) to be within \(\epsilon\) of \(L\) if \(x\) is within \(\delta\) of \(a\). Note that this has to hold true for all \(\epsilon\), and you choose \(\epsilon\) first!</p>
+<p>From this we get the well-known definition of the derivative:
+<span class="math display">$$f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}$$</span>
+and you can define the integral similarly.</p>
+<p>The limit solved calculus’s rigor problem. From the limit the entire field of analysis was invented and placed on solid ground, and this foundation has stood to this day.</p>
+<p>Yet, it seems like we lose something important when we replace the idea of the “infinitesimally small” with the “arbitrarily close to.” Could we actually make numbers that were <em>infinitely small?</em></p>
+<h2 id="the-sequence-construction">The Sequence Construction</h2>
+<p>Imagine some mathematical object that had all the relevant properties of the real numbers (addition, multiplication are associative and commutative, is closed, etc.) but had infinitely small and infinitely large numbers. What does this object look like?</p>
+<p>We can take the set of all infinite sequences of real numbers <span class="math inline">ℝ<sup>ℕ</sup></span> as a starting point. A typical element <span class="math inline"><em>a</em> ∈ ℝ<sup>ℕ</sup></span> would be
+\[a = (a_0, , a_1, , a_2, )\] where <span class="math inline"><em>a</em><sub>0</sub>, <em>a</em><sub>1</sub>, <em>a</em><sub>2</sub>, …</span> is some infinite sequence of real numbers.</p>
+<p>We can define addition and multiplication elementwise as:
+\[a + b = (a_{0} + b_{0}, , a_{1} + b_{1}, a_{2} + b_{2}, ),\]
+\[a \cdot b = (a_0 \cdot b_0, a_1 \cdot b_1, a_2 \cdot b_2, \ldots).\]</p>
+<p>You can verify that this is a commutative ring, which means that these operations behave nicely. Yet, being a commmutative ring is not the same thing as being an ordered field, which is what we eventually want if our desired object is to have the same properties as the reals.</p>
+<p>To get from <span class="math inline">ℝ<sup>ℕ</sup></span> to a field structure, we have to modify it to accomodate well-defined division. The typical way of doing this is looking at how to introduce the zero product property: i.e. ensuring that if <span class="math inline"><em>a</em>, <em>b</em> ∈ ℝ<sup>ℕ</sup></span> then if <span class="math inline"><em>a</em><em>b</em> = 0</span> either one of <span class="math inline"><em>a</em>, <em>b</em></span> is <span class="math inline">0</span>.</p>
+<p>If we let <span class="math inline">0</span> be the sequence of all zeros <span class="math inline">(0,0,0,…)</span> in <span class="math inline">ℝ<sup>ℕ</sup>,</span> then it is clear that we can have two non-zero elements multiply to get zero. If we have
+\[a = (a, 0, 0, 0, \ldots),\]
+and \[b = (0,b,b,b \ldots),\]
+then neither of these are the zero element, yet their product is zero.</p>
+<p>How do we fix this? Equivalence classes!</p>
+<p>Our problem is that there are too many distinct “zero-like” things in the ring of real numbered sequences. Intuitively, we should expect the sequence <span class="math inline">(0,1,0,0,…)</span> to be <em>basically</em> zero, and we want to find a good condensation of <span class="math inline">ℝ<sup>ℕ</sup></span> that allows for this.</p>
+<p>In other words, how do we make all the sequences with “<a href="https://www.ykumar.org/posts/almost-always/">almost all</a>” their elements as zero to be equal to zero?</p>
+<h2 id="almost-all-agreement-ft.-ultrafilters">Almost All Agreement ft. Ultrafilters</h2>
+<p>Taken from “<a href="https://www.ykumar.org/posts/almost-always/">five ways to say "Almost Always" and actually mean it</a>”:</p>
+<blockquote>
+<p>A <em>filter</em> <span class="math inline">ℱ</span> on an arbitrary set \(I\) is a collection of subsets of \(I\) that is closed under set intersections and supersets. (Note that this means that the smallest filter on \(I\) is \(I\) itself).</p>
+<p>An <em>ultrafilter</em> is a filter which, for every \(A \subseteq I\), contains either \(A\) or its complement. A <em>principal</em> ultrafilter contains a finite set.</p>
+<p>A <em>nonprincipal ultrafilter</em> does not.</p>
+<p>This turns out to be an incredibly powerful mathematical tool, and can be used to generalize the concept of “almost all” to esoteric mathematical objects that might not have well-defined or intuitive properties.</p>
+</blockquote>
+<p>Let’s say we define some nonprincipal ultrafilter <span class="math inline">𝒰</span> on the natural numbers. This will contain only cofinite sets, and will exclude all finite sets. Now, let’s take two sequences <span class="math inline"><em>a</em>, <em>b</em> ∈ ℝ<sup>ℕ</sup>,</span> and define their <em>agreement set</em> \(I\) to be the indices on which \(a,b\) are identical (have the same real number in the same position).</p>
+<p>Observe that \(I\) is a set of natural numbers. If \(I ,\) then \(I\) cannot be finite, and it seems pretty obvious that almost all the elements in \(a,b\) are the same (they only disagree at a finite number of places after all). Conversely, if <span class="math inline"><em>I</em> ∉ 𝒰,</span> this implies that the complement of \(I,\) <span class="math inline">ℕ/<em>I</em> ∈ 𝒰</span>, which means that \(a,b\) disagree at almost all positions, so they probably shouldn’t be equal.</p>
+<p>Voila! We have a suitable definition of “almost all agreement”: if the agreement set <span class="math inline"><em>I</em></span> is contained in some arbitrary nonprincipal ultrafilter <span class="math inline">𝒰</span>.</p>
+<p>Let <span class="math inline"><sup>*</sup>ℝ</span> be the quotient set of <span class="math inline">ℝ<sup>ℕ</sup></span> under this equivalence relation (essentially, the set of all distinct equivalence classes of <span class="math inline">ℝ<sup>ℕ</sup></span>). Does this satisfy the zero product property?</p>
+<p>(Notation note: we will let \((a)\) denote the infinite sequence of the real number \(a\), and \([a]\) the equivalence class of the sequence \((a)\) in \(^* \mathbb{R}\).)</p>
+<h2 id="yes-this-behaves-like-the-real-numbers">Yes, This Behaves Like The Real Numbers</h2>
+<p>Let <span class="math inline"><em>a</em>, <em>b</em> ∈ ℝ<sup>ℕ</sup></span> such that \(ab = (0)\). Let’s break this down elementwise: either <span class="math inline"><em>a</em><sub><em>n</em></sub>, <em>b</em><sub><em>n</em></sub></span> must be zero for all <span class="math inline"><em>n</em> ∈ ℕ.</span> As one of the ultrafilter axioms is that it must contain a set or its complement, either the index set of the zero elements in \(a\) or the index set of the zero elements in \(b\) will be in any nonprincipal ultrafilter on <span class="math inline">ℕ.</span> Therefore, either \(a\) or \(b\) is equivalent to <span class="math inline">(0)</span> in \(^* \mathbb{R},\) so \(^* \mathbb{R}\) satisfies the zero product property.</p>
+<p>Therefore, division is well defined on \(^*\mathbb{R}\)! Now all we need is an ordering, and luckily almost all agreement saves the day again. We can say for \(a,b ^*\) that <span class="math inline"><em>a</em> &gt; <em>b</em></span> if almost all elements in <span class="math inline"><em>a</em></span> are greater than the elements in <span class="math inline"><em>b</em></span> at the same positions (using the same ultrafilter equivalence).</p>
+<p>So, \(^*\mathbb{R}\) is an ordered field!</p>
+<h2 id="infinitesimals-and-infinitely-large-numbers">Infinitesimals and Infinitely Large Numbers</h2>
+<p>We have the following hyperreal:</p>
+<p><span class="math display">$$\epsilon = \left( 1, \frac{1}{2}, \frac{1}{3}, \ldots, \frac{1}{n}, \ldots \right).$$</span></p>
+<p>Recall that we embed the real numbers into the hyperreals by assigning every real number \(a\) to the equivalence class \([a]\). Now observe that <span class="math inline"><em>ϵ</em></span> <em>is smaller than every real number embedded into the hyperreals this way.</em></p>
+<p>Pick some arbitrary real number <span class="math inline"><em>a</em></span>. There exists \(p \) such that \(&lt; a\). There are infinitely many fractions of the form \(\), where <span class="math inline"><em>n</em></span> is a natural number greater than <span class="math inline"><em>p</em></span>, so <span class="math inline"><em>ϵ</em></span> is smaller than <span class="math inline">(<em>a</em>)</span> at almost all positions, so it is smaller than <span class="math inline"><em>a</em></span>.</p>
+<p>This is an infinitesimal! This is a rigorously defined, coherently defined, <em>infinitesimal number</em> smaller than all real numbers! In a number system which shares all of the important properties of the real numbers! (except the Archimedean one, as we will shortly see, but that doesn’t really matter).</p>
+<p>Consider the following</p>
+<p>\[ \Omega = (1,2,3, \ldots).\]</p>
+<p>By a similar argument this is larger than all possible real numbers. I encourage you to try to prove this for yourself!</p>
+<p>(The Archimedean principle is that which guarantees that if you have any two real numbers, you can multiply the smaller by some natural number to become greater than the other. This is not true in the hyperreals. Why? (Hint: \( \Omega \) breaks this if you consider a real number.))</p>
+<h2 id="how-does-this-tie-into-calculus-exactly">How does this tie into calculus, exactly?</h2>
+<p>Well, we have a coherent way of defining infinitesimals!</p>
+<p>The short answer is that we can define the <em>star</em> operator <span class="math inline">st(<em>x</em>)</span> as that which maps any hyperreal to its closest real counterpart, provided it can be written as the sum of a real number and an infinitesimal part. Then, the definition of a derivative becomes
+<span class="math display">$$f'(x) = \text{st}\left( \frac{f(x+\Delta x)- f(x)}{\Delta x}\right)$$</span>
+where <span class="math inline"><em>Δ</em><em>x</em></span> is some infinitesimal. More on this in a future blog post!</p>
+<p>It also turns out the hyperreals have a bunch of really cool applications in fields far removed from analysis. Check out my expository paper on <a href="https://github.com/cyclicalreasoning/Maths/blob/main/Nonstandard%20Methods%20and%20Applications%20in%20Ramsey%20Theory/paper.pdf">the intersection of nonstandard analysis and Ramsey theory</a> for an example!</p>
+<p>Yet, the biggest effect I think this will have is pedadogical. I’ve always found the definition of a limit kind of unintuitive, and it was specifically invented to add <em>post hoc</em> coherence to calculus after it had been invented and used widely. I suspect that formulating calculus via infinitesimals in introductory calculus classes would go a long way to making it more intuitive.</p>
+<p>And infinitely small things are cooler than limits any day.</p>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+		All thoughts are my own.
+		Made with
+            <a href="http://jaspervdj.be/hakyll">Hakyll</a>.
+        </footer>
+    </body>
+</html>
