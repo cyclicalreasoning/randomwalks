@@ -1,0 +1,46 @@
+---
+title: "Invisible China"
+author: Yudhister Kumar
+content-author: Scott Rozelle
+type: review
+keywords: ['book']
+date: 2023-05-15
+---
+## Rating: **3/5**
+
+Pretty good. Made me think, and Rozelle's unique perspective (economist who's spent 30+ years on the ground) adds an authentic flavor to the book.
+
+He claims that the existential threat to China's potential future growth and success is a lack of human capital: specifically, that systemic factors hinder rural Chinese children's ability to participate effectively in the service-based, advanced economy of the 21st century, and that fixing this issue is imperative so that China does not fall into the middle income trap.
+
+> In a 2004 article in Foreign Affairs, political scientist Geoffrey Garrett shared a startling observation. He looked at the history of recent economic development and noticed that while rich countries were continuing to do well and many poor countries were achieving strong growth rates, the countries in the middle of the global income spectrum were growing more slowly and less successfully than anyone else.
+
+> In a report that made ripples throughout the development world, economists at the World Bank demonstrated the full extent of the problem. The report showed that out of 101 countries that were middle income in 1960, only thirteen had made it to high-income status by 2008. The rest remained stuck or even ended the fifty years poorer than before.
+
+The middle income trap is the stagnation developing countries face when their average citizen reaches a "middle income." An easy way for developing countries to rapidly grow their economies is to accept industrialization and foreign direct investment, shifting to a manufacturing economy reminiscent of Western nations in the 1890s. However, Rozelle makes the argument that to then shift from a middle income to high income country requires an educated populace, and the middle-income countries which have failed to continue their economic growth did not appropriately invest in the education of their citizenry.
+
+> But with a bit of historical data, another trend emerges that is far more relevant to the question at hand: the very small number of countries that have made it out of middle-income status in recent decades—the graduates—all have very high levels of high school education. Even more surprising, they’ve had those high levels for decades. In particular, back when they were still middle income, the graduates (places like South Korea, Taiwan, and Ireland) all had high school attainment rates comparable to those of the rich countries.
+
+China is not appropriately investing in the necessary amounts of education to avoid the middle income trap. While they may have the necessary innovation, all the Baidus, Tencents, and Bytedances in the world wouldn't fix the systemic issue of having nearly 70% of its population without a high school education unable to participate in the high-skilled, high-paid industries that characterize high-income countries.
+
+Rural Chinese mainly work low-skilled manufacturing jobs, or jobs which don't require a high school education. This was fine, until rising wages in mainland China started pushing manufacturing jobs overseas, leaving hundreds of thousands, if not millions of workers unemployed. Throughout the book, Rozelle includes telling anecdotes of workers who lost their job and couldn't get a new one because they didn't have the required skillset. 
+
+> ...We fell into conversation with one man in particular. Mr. Wang was about thirty-five and had recently been laid off from his job of eighteen years as an electrician.
+
+> As we watched, Mr. Wang gamely sidled up to the first booth, which represented a bank. The man running the booth, a human resources staff member, shook his hand and asked him to read a short page of text and comment on what he understood. Mr. Wang stared hard at the piece of paper, trying to force the characters into an order he could understand. He knew all the words and could read them aloud, but many of the terms were over his head. He kept getting confused by the logic of the sentences. For several minutes he stared at it, trying to make sense of what he was seeing. At first the man running the booth was patient and seemed sympathetic, but gradually the bank representative lost interest, turned back to his desk, and started looking around for workers who might be a better bet. After a few more minutes, Mr. Wang lowered his head with a sigh: “I’m sorry, I just can’t make sense of it.”
+
+
+As it turns out, simply increasing access and/or mandating a high school education wouldn't be enough. The rural/urban divide in China runs deep. The opportunity & outcome differential comes not only from unequal access to education and other outgrowths of the *hukou* policy, but also from deep-seated systemic differences. 'Vocational' schooling is a joke:
+
+> Tao’s middle school teacher suggested he check out the new vocational high school that had recently opened across town... When he arrived on campus a week later, he found himself in an unfamiliar world. Whereas his middle school had been orderly and regimented, here chaos reigned. The older students were tough-looking, with tight jeans, black pleather jackets, and spiked hair. As he walked to class on his first day, there were no adults in sight. He passed groups of kids hanging out in the courtyard, smoking cigarettes and laughing.
+
+Children who grow up in rural China suffer from three "invisible epidemics", as Rozelle calls them: anemia, uncorrected myopia, and parasitic intestinal worms. Iron-deficiency anemia has been linked to dramatic decreases in IQ, myopia (for obvious reasons) impedes learning ability, and worms almost literally sap the life force from their hosts. Luckily, cheap and safe interventions can fix these issues. Iron supplements, subsidized glasses, and cheap, common medicine could easily bring the health of a Chinese kid in the country to within striking distance of one in Beijing. 
+
+Perhaps a harder problem to fix is that of crucial stimulation of children during their formative developmental years. Rural parenting strategies are unequipped to give a child sufficient intellectual stimulation. 
+
+> In rural China, babies are systematically missing out on the mental stimulation they need. When we asked rural families if they ever talked to their babies, we were met with blank looks or bemused smiles. “Why would I talk to my baby?” one young mother responded, giggling into her hand. “She can’t talk back!”
+
+Yet, this leads to delayed infant development, and the permanent stunting of a child's ability relative to their peers. Rural chinese babies score horribly on the Bayley test, while urban Chinese children score higher than average. This seems to be much of the issue. 
+
+For the sake of China and the world, Rozelle hopes that China will be able to fix its human capital crisis. He is somewhat bullish: the Chinese government is beginning to recognize that this is an issue, and some sane policies have been implemented. But he wants more to be done. Maybe China can pull off an economic miracle again, but this seems to be a major roadblock.
+
+*Also on [Goodreads](https://www.goodreads.com/review/edit/51941583).*
