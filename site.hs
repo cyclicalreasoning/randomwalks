@@ -16,11 +16,15 @@ main = hakyllWith config $ do
         route   idRoute
         compile copyFileCompiler
 
+    match "files/*" $ do
+    	route   idRoute
+	compile copyFileCompiler
+
     match "css/*" $ do
         route   idRoute
         compile compressCssCompiler
 
-    match (fromList ["about.rst"]) $ do
+    match (fromList ["about.md"]) $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
@@ -47,6 +51,14 @@ main = hakyllWith config $ do
                 >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
                 >>= loadAndApplyTemplate "templates/default.html" archiveCtx
                 >>= relativizeUrls
+
+	create ["rss.xml"] $ do
+		route idRoute
+		compile $ do
+			let feedCtx = postCtx `mappend`	
+				constField "description" "This is the post description"
+			posts <- fmap (take 10) . recentFirst =<< loadAll "posts/"
+			renderRss myFeedConfiguration feedCtx posts
 
 
     match "index.html" $ do
@@ -75,6 +87,15 @@ config :: Configuration
 config = defaultConfiguration
     { destinationDirectory = "docs"
     }
+
+myFeedConfiguration :: FeedConfiguration
+myFeedConfiguration = FeedConfiguration
+	{ feedTitle = "Random Walks"
+	, feedDescription = "posts and musings"
+	, feedAuthorName = "Yudhister Kumar"
+	, feedAuthorEmail = "kumar.yudhister@proton.me"
+	, feedRoot = "https://ykumar.org/"
+	}
 
 
 
