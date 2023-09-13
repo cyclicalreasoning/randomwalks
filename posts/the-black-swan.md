@@ -40,6 +40,7 @@ Later, in Part Three, NNT introduces the idea of "fractal randomness": randomnes
 ## Assorted Philosophizing
 
 Taleb clearly has Heroes: Poincaré, Popper, Mandelbrot, etc. (he even says this himself):
+
 > Half the people I know call me irreverent (you have read my comments about your local Platonified professors), half call me fawning (you have seen my slavish devotion to Huet, Bayle, Popper, Poincaré, Montaigne, Hayek, and others).
 His heroes are very interesting. Popper has shown up as the fundamental critic of historicity, Hayek as one of the only sane economists, Poincaré as a luminary polymath, and the anecdotes he drops make for good starting points for reading material. 
 
