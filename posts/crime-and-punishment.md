@@ -7,6 +7,8 @@ type: review
 keywords: ['book']
 ---
 
+<img src="/images/crime-and-punishment.jpg" style="float: right; margin: 16px;" width=250 />
+
 ## Rating: **5/5**
 
 A masterpiece. 
@@ -43,6 +45,6 @@ Crime and Punishment is a story of salvation, and each one of Raskolnikov's part
 
 This is but a fraction of what makes this work great, and it's been analyzed to death by high schoolers and Harvard professors alike. Still an amazing read.
 
-*Also on [Goodreads].*
+*Also on [Goodreads](https://www.goodreads.com/review/show/5461620735).*
 
 

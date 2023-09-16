@@ -6,6 +6,8 @@ content-author: Nassim Nicholas Taleb
 type: review
 keywords: ['book']
 ---
+<img src="/images/the-black-swan.jpg" style="float: right; margin: 16px;" width=250 />
+
 
 ## Rating: **3/5**
 

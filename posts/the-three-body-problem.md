@@ -6,6 +6,8 @@ type: review
 keywords: ['book']
 content-author: Liu Cixin
 ---
+<img src="/images/the-three-body-problem.jpg" style="float: right; margin: 16px;" width=250 />
+
 ## Rating: **3/5**
 
 I have a weakness for marginally-better-than-average sci-fi, and this is definitely better than most sci-fi books I've read. (Which may be a sad reflection on the state of decent scifi worldbuilding).

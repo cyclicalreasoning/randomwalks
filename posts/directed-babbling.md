@@ -47,12 +47,13 @@ The obvious failure mode is a conversation in which  Alice and Bob decide on a 
 - Having *extremely* low barriers to exit the conversation. Making it a social norm to get up and leave one of these at any moment is the bare minimum.
 
 A subtler failure mode is a conversation which waffles between topics without any substance being exchanged between the participants. Such as:
+
 > Alice: "Do you prefer London or New York?"
-
-> Bob: "Purple." 
-
+>
+> Bob: "Purple."
+>
 > Alice: "Clouds." 
-
+>
 > Bob: "Steak."
 
 ... and so on. i personally find these to be very entertaining, but it is a good idea to set expectations beforehand of exactly how unhinged you would like the conversation to be (some calibration is necessary).

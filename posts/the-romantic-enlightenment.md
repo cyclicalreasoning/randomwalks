@@ -6,6 +6,9 @@ type: review
 keywords: ['book']
 date: 2023-03-20
 ---
+
+<img src="/images/the-romantic-enlightenment.jpg" style="float: right; margin: 16px;" width=250 />
+
 ## Rating: **3/5**
 
 Well. I am definitely rereading this in a year. 

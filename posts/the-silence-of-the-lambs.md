@@ -6,6 +6,9 @@ content-author: Thomas Harris
 type: review
 keywords: ['book']
 ---
+
+<img src="/images/the-silence-of-the-lambs.jpg" style="float: right; margin: 16px;" width=250 />
+
 ## Rating: **2/5**
 
 I began to read this book expecting a decent representation of insanity, and I finished it because it was a half-decent thriller.

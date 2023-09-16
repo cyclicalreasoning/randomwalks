@@ -6,6 +6,9 @@ type: review
 keywords: ['book']
 date: 2023-05-15
 ---
+
+<img src="/images/invisible-china.jpg" style="float: right; margin: 16px;" width=250 />
+
 ## Rating: **3/5**
 
 Pretty good. Made me think, and Rozelle's unique perspective (economist who's spent 30+ years on the ground) adds an authentic flavor to the book.

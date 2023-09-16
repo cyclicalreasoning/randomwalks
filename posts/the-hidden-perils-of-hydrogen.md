@@ -33,7 +33,7 @@ The majority of short-term solutions to hydrogen’s issues as a widespread fuel
 
 ## Long-term Solutions
 
-Long-term solutions take two forms:**higher-density gaseous storage** and **materials-based hydrogen storage**. The former develops vessels that can compress H2 gas more, while the latter seeks to manufacture materials that have better volumetric hydrogen ratios. This will mainly focus on the materials based approach. 
+Long-term solutions take two forms: **higher-density gaseous storage** and **materials-based hydrogen storage**. The former develops vessels that can compress H2 gas more, while the latter seeks to manufacture materials that have better volumetric hydrogen ratios. This will mainly focus on the materials based approach. 
 
 The main research avenues for materials-based hydrogen storage are metal hydrides, adsorbents, and chemical hydrogen storage materials. Let’s look at each.
 

@@ -5,6 +5,11 @@ date: 2023-09-12
 description: "kids and pigs"
 tags: ['book-review', 'fiction', 'British']
 ---
+
+<img src="/images/lord-of-the-flies.jpg" style="float: right; margin: 16px;" width=250 />
+
+# Rating: 3/5
+
 Where to begin?
 
 An interesting microcosm of human savagery: the eyes of a child simultaneously euphemize and accentuate the horror. Yet, it also attempts to present the way in which humans 'naturally' order themselves. 

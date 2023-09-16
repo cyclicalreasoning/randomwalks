@@ -6,6 +6,8 @@ type: review
 keywords: ['book']
 content-author: Kurt Vonnegut
 ---
+<img src="/images/slaughterhouse-five.jpg" style="float: right; margin: 16px;" width=250 />
+
 
 ## Rating: **2/5**
 
