@@ -23,6 +23,7 @@ Selected writings:
 * [I didn't have a phone for 16 years. It... was ok?](/musings-on-smartphones)
 
 ## Books
+* [Radical Markets](/radical-markets)
 * [The Romantic Enlightenment](/the-romantic-enlightenment)
 * [Crime and Punishment](/crime-and-punishment)
 * [The Black Swan](/the-black-swan)
