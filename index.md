@@ -18,6 +18,7 @@ Selected writings:
 
 
 ## Rambles
+* [Aesthetics](/aesthetics)
 * [Toledo](/toledo)
 * [Geneva](/geneva)
 * [I didn't have a phone for 16 years. It... was ok?](/musings-on-smartphones)
