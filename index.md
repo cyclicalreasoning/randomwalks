@@ -24,11 +24,8 @@ Selected writings:
 
 ## Books
 * [Radical Markets](/radical-markets)
-* [The Romantic Enlightenment](/the-romantic-enlightenment)
 * [Crime and Punishment](/crime-and-punishment)
-* [The Black Swan](/the-black-swan)
 * [Slaughterhouse-Five](/slaughterhouse-five)
-* [Invisible China](/invisible-china)
 
 For a full list of my writings, in order, see the [archives](/archive).
 

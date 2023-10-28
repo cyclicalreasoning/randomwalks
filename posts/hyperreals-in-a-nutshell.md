@@ -61,7 +61,7 @@ In other words, how do we make all the sequences with "[almost all](https://www.
 
 ## Almost All Agreement ft. Ultrafilters
 
-Taken from "[five ways to say \"Almost Always\" and actually mean it](https://www.ykumar.org/posts/almost-always/)":
+Taken from "[five ways to say \"Almost Always\" and actually mean it](https://www.ykumar.org/almost-always/)":
 
 > A *filter* $\mathcal{F}$ on an arbitrary set \\(I\\) is a collection of subsets of \\(I\\) that is closed under set intersections and supersets. (Note that this means that the smallest filter on \\(I\\) is \\(I\\) itself).
 >
@@ -117,7 +117,7 @@ The short answer is that we can define the *star* operator $\text{st}(x)$ as tha
 $$f'(x) = \text{st}\left( \frac{f(x+\Delta x)- f(x)}{\Delta x}\right)$$
 where $\Delta x$ is some infinitesimal. More on this in a future blog post!
 
-It also turns out the hyperreals have a bunch of really cool applications in fields far removed from analysis. Check out my expository paper on [the intersection of nonstandard analysis and Ramsey theory](https://github.com/cyclicalreasoning/Maths/blob/main/Nonstandard%20Methods%20and%20Applications%20in%20Ramsey%20Theory/paper.pdf) for an example!
+It also turns out the hyperreals have a bunch of really cool applications in fields far removed from analysis. Check out my expository paper on [the intersection of nonstandard analysis and Ramsey theory](https://ykumar.org/files/Nonstandard_Methods_and_Applications_in_Ramsey_Theory.pdf) for an example!
 
 Yet, the biggest effect I think this will have is pedadogical. I've always found the definition of a limit kind of unintuitive, and it was specifically invented to add *post hoc* coherence to calculus after it had been invented and used widely. I suspect that formulating calculus via infinitesimals in introductory calculus classes would go a long way to making it more intuitive. 
 

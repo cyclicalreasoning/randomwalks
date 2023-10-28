@@ -5,14 +5,13 @@ author: Yudhister Kumar
 type: blog
 keywords: ['energy']
 description: "Novel Hydrogen storage technologies are necessary for a clean energy future"
----
-> Note (as of Jan 27, 2023): I do not endorse some aspects of this post as is. Namely, the figures and lack of citations. Editing in progress. 
+--- 
 
 Hydrogen is the fuel of the future. It’s the most abundant element in the universe, is incredibly mass-efficient, and can be produced without much fuss. It can be used for both large and small scale energy production (think fusion and fuel cells respectively), and has virtually no emissions, carbon or otherwise. However, there’s just one problem.
 
 It’s absurdly volume-inefficient. 
 
-One liter of hydrogen can produce 0.01 MJ of energy at STP (standard temperature and pressure, 273K and 1atm) compared to 34 MJ/L for gasoline. That’s 0.02% of the energy output for liter. Granted, things improve drastically for liquid hydrogen, where the comparison is 8 MJ/L vs 34, but this requires maintenance of temperatures below −252.8°C, only a few degrees above absolute zero. 
+One liter of hydrogen can produce 0.01 MJ of energy at STP (standard temperature and pressure, 273K and 1 atm) compared to 34 MJ/L for gasoline. That’s 0.02% of the energy output for liter. Granted, things improve drastically for liquid hydrogen, where the comparison is 8 MJ/L vs 34, but this requires maintenance of temperatures below −252.8°C, only a few degrees above absolute zero. 
 
 Gaseous hydrogen isn’t that easy to store either: it requires containers pressurizable up to 700 bar (700x atmospheric pressure). That’s 10,000 PSI. And even then, it takes 5L of hydrogen to match up to 1L of gasoline. The Department of Energy estimates that to meet most lightweight vehicular driving ranges, between 5-13 kg of hydrogen need to be carried onboard the vehicle. If we do some quick calculations, that means that vehicles need to carry between 85 - 294 L of liquid hydrogen (some multiple of this for gaseous hydrogen) to go anywhere. For all you Americans, this is roughly between 22-77 gallons. 
 
