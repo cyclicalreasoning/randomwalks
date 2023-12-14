@@ -39,24 +39,8 @@ main = hakyllWith config $ do
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
 	    >>= saveSnapshot "content"
             >>= loadAndApplyTemplate "templates/default.html" postCtx
-            >>= relativizeUrls
-
-    create ["archive.html"] $ do
-        route $ setExtension "html" `composeRoutes` 
-	        appendIndex        
-        compile $ do
-            posts <- recentFirst =<< loadAll "posts/*"
-            let archiveCtx =
-                    listField "posts" postCtx (return posts) `mappend`
-		    constField "title" "Archive"             `mappend`
-		    dropIndexHtml "url"                      `mappend`
-                    defaultContext
-
-            makeItem ""
-                >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
-                >>= loadAndApplyTemplate "templates/default.html" archiveCtx
-                >>= relativizeUrls
-
+            >>= relativiseUrls
+`
     create ["rss.xml"] $ do
         route idRoute
         compile $ do
@@ -105,6 +89,12 @@ dropPostsPrefix :: Routes
 dropPostsPrefix = gsubRoute "posts/" $ const ""
 
 ---------------------------------------------------------
+dropRamblesPrefix :: Routes
+dropRamblesPrefix = gsubRoute "rambles/" $ const ""
+--------------------------
+dropBooksPrefix :: Routes
+dropBooksPrefix = gsubRoute "books/" $ const ""
+----------------
 
 appendIndex :: Routes
 appendIndex = customRoute $ 
